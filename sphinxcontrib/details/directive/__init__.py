@@ -68,7 +68,7 @@ class DetailsDirective(Directive):
 
 class DetailsTransform(SphinxPostTransform):
     default_priority = 200
-    builders = ('html',)
+    formats = ('html',)
 
     def run(self):
         matcher = NodeMatcher(nodes.container, type='details')
